@@ -1,0 +1,776 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Navbar Styles */
+.navbar {
+    background: #333 !important;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: black !important;
+  }
+  
+  /* Add padding to body to avoid navbar overlapping content */
+  body {
+    padding-top: 70px; /* Adjust based on navbar height */
+  }
+
+  /* Active Navbar Link */
+.navbar-nav .nav-link.active {
+    color: #ffc107 !important;
+    font-weight: bold;
+  }
+  
+/* Header Section Styles */
+.header {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  background: url('assests/hero_bg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* Overlay for better text visibility */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Header Buttons */
+.header-buttons {
+  margin-top: 30px;
+}
+
+.header-buttons .btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.header-buttons .btn-primary {
+  background: cyan;
+  border: 2px solid black;
+  color: #333;
+}
+
+.header-buttons .btn-primary:hover {
+  background: black;
+  transform: scale(1.05);
+}
+
+.header-buttons .btn-secondary {
+  background: cyan;
+  border: 2px solid black;
+  color: #333;
+}
+
+.header-buttons .btn-secondary:hover {
+  background: black;
+ /* color: #333;*/
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Icon Styles */
+.header-buttons .btn i {
+  margin-right: 10px; /* Space between icon and text */
+  margin-left: 10px;
+}
+/* education section*/
+.education {
+    padding: 80px 0;
+    background: url('assests/eduimg.jpg') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+  }
+
+  /* Overlay for better text visibility */
+.education::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  }
+ 
+  .education .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .education h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white; /* Yellow color for the heading */
+    text-transform: uppercase;
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+  /* Education Cards */
+.education .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  .education-card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    flex: 1 1 300px; /* Equal width for all cards */
+    max-width: 300px; /* Limit maximum width */
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  
+  .education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+  }
+
+  .education-card h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-bottom: 15px;
+  }
+  
+  .education-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white; /*  color for headings */
+  }
+  
+  .education-card p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 5px 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Background Image Animation */
+  @keyframes bgAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .education {
+    animation: bgAnimation 10s infinite ease-in-out;
+  }
+
+  /* About Section Styles */
+.about {
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    color: #fff;
+  }
+  /* Video Background */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the video behind the content */
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire section */
+}
+
+/* Overlay for better text visibility */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 0;
+}
+
+/* Content */
+.about .container {
+  position: relative;
+  z-index: 1;
+}
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; /* Yellow color for the heading */
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #fff; /* White text for better contrast */
+  margin-bottom: 30px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.about-content {
+  animation: fadeInRight 1.5s ease-in-out;
+}
+
+/* Button Styles */
+.about .btn-primary {
+  background: #ffc107;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.about .btn-primary:hover {
+  background: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Skills Section Styles */
+.skills {
+  padding: 80px 0;
+  background: url('assests/bg_skills.jpeg') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Overlay for better text visibility */
+.skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.skills .container {
+  position: relative;
+  z-index: 1;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: white; /* Yellow color for the heading */
+  animation: fadeInDown 1.5s ease-in-out;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #ffc107; /* Yellow color for icons */
+}
+/* Custom Icon Colors */
+.skill-card .fa-html5 {
+  color: #e34c26; /* HTML orange */
+}
+
+.skill-card .fa-css3-alt {
+  color: #2965f1; /* CSS light blue */
+}
+
+.skill-card .fa-bootstrap {
+  color: #7952b3; /* Bootstrap purple */
+}
+
+.skill-card .fa-js-square {
+  color: #f0db4f; /* JavaScript yellow */
+}
+
+.skill-card .fa-react {
+  color: #61dbfb; /* React light blue */
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  
+  /* Section Styles */
+  section {
+    padding: 40px 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  /* Projects Section Styles */
+.projects {
+  padding: 80px 0;
+  background: #fff;
+  background: url('assests/projects_bg.jpeg') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.project-card {
+  background:white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project-links .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-links .btn-primary {
+  background: cyan;
+  color: #333;
+  border: none;
+}
+
+.project-links .btn-primary:hover {
+  background: cyan;
+  transform: scale(1.05);
+}
+
+.project-links .btn-secondary {
+  background: #333;
+  color: #fff;
+  border: none;
+}
+
+.project-links .btn-secondary:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+/* Contact Section Styles */
+.contact {
+  padding: 80px 0;
+  background: url('assests/cnt_bg_img.jpg') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Overlay for better text visibility */
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.contact .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: white; /* Yellow color for the heading */
+  animation: fadeInDown 1.5s ease-in-out;
+  font-weight: bold;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for inputs */
+  color: #333;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-form .btn-primary {
+  background: rgb(172, 168, 177);
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background: black;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+/* Footer Section Styles */
+.footer {
+  padding: 60px 0 20px;
+  background: #333;
+  color: #fff;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white; /* Yellow color for headings */
+  font-weight: bold;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-info ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-info ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.footer-info ul li strong {
+  color: whitesmoke; /* Yellow color for strong text */
+}
+
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+  color: black; /* Yellow color on hover */
+}
+
+.footer-social ul li a i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+}
